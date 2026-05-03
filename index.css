@@ -36,17 +36,17 @@ p{
     color:aliceblue;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     color:#7FFFD4;
-
 }
+
 nav a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 18px;
 }
 
@@ -66,9 +66,9 @@ h1{
 }
 nav a {
     display: inline-block;
-    width: 120px;   /* ancho */
-    height: 40px;   /* alto */
-    line-height: 40px; /* centra el texto vertical */
+    width: 100px;   /* ancho */
+    height: 25px;   /* alto */
+    line-height: 25px; /* centra el texto vertical */
     text-align: center;
 }
 
@@ -79,15 +79,8 @@ nav a{
   text-shadow: 2px 2px 5px black;
     }
 
-nav a {
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
 
 
-nav a:hover {
-    transform: scale(1.1); /* crece */
-}
 
 nav a {
     transition: 0.3s;
