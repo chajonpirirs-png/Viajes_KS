@@ -8,12 +8,20 @@ body{
     
 /* selector decendente*/
 
- .barra-nav{
-   background-color: rgba(14, 176, 198, 0.512);
-   width: 1500px;
-   height: 40px;
-   text-align: center;
- }
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color:#7FFFD4;
+}
+
+
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
 
  
  .barra-nav li{
@@ -79,10 +87,53 @@ h5{
  .contenedor{
     gap: 20px;
  }
- button{
+ button a{
     background-color: rgba(2, 2, 62, 0.877);
     color: aqua;
     border: 25%;
     display: flex;
 
  }
+ nav{
+  position: relative;
+  animation: entrar 1s ease;
+ }
+ @keyframes entrar {
+  from{ 
+    left: -100%;
+  }
+  to{
+    left: 0;
+
+  }
+  
+ }
+ nav a {
+color: black;
+text-shadow:2px  2px 5px black;
+
+ }
+ nav a:hover{
+  background-color: rgb(11, 167, 149);
+  color:rgb(237,233,233) ;
+  border-radius: 10px;
+
+ }
+ 
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin:0 18px;
+    font-size: 18px;
+}
+nav a{
+  transition: 1s;
+}
+nav{
+  top:0;
+} 
+button a{
+  min-width: 60px;
+  text-decoration: none;
+ 
+}
